@@ -47,7 +47,7 @@ connectDB().then(() => {
                 id: u._id.toString(),
                 username: u.username,
                 email: u.email,
-                password: u.password // Add this line
+                password: u.password
             }));
             res.json(mapped);
         } catch (err) {
